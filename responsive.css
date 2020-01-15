@@ -549,6 +549,18 @@
     .section-heading h2 {
         font-size: 2em;
     }
+    .memoragble-days-img img {
+        -webkit-mask-image: url(img/mask-img.png);
+        mask-image: url(img/mask-img.png);
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-size: 60%;
+        mask-size: 60%;
+        -webkit-mask-position: center center;
+        mask-position: center center;
+        opacity: .9;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+    }
     .wdding-venu-content h2 {
         font-size: 2em;
     }
@@ -723,5 +735,12 @@
     .attending-form-2 input[type="submit"] {
         font-size: .938em;
         width: 190px;
+    }
+    .memoragble-days-wraper:before {
+        background-image: url(img/weddin-venue-floral.png);
+        background-size: 100%;
+    }
+    .memoragble-days-content {
+        height: 100px;
     }
 }

@@ -17,7 +17,7 @@
         $('#bridemaid-stage').append(html.replace(/bridemaid-1.jpg/g, bridemaidImages[i])
             .replace('Sarang', bridemaidNames[i]).replace('Brother', bridemaidRelations[i]));
     }
-    bridemaidImages = ['prachi.jpg', 'asav-dhrumi.jpg'];
+    bridemaidImages = ['prachi.jpg', 'asav-dhrumi-1.jpg'];
     bridemaidNames = ['Prachi', 'Asav & Dhrumi'];
     bridemaidRelations = ['Sister', 'Sisters'];
     html = $('#groomsman-stage').html();
