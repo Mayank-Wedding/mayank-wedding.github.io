@@ -539,16 +539,15 @@
         width: 100%;
     }
     .intruduction-content-img img {
-        display: none;
+        width: 90%;
+        height: 90%;
+        margin: 5%;
     }
     .single-introduction:nth-child(2n) .intruduction-content-txt {
         text-align: center;
     }
     .section-heading h2 {
         font-size: 2em;
-    }
-    .memoragble-days-img img {
-        display: none;
     }
     .wdding-venu-content h2 {
         font-size: 2em;
