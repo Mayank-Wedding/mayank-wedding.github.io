@@ -475,6 +475,7 @@ header.menu-and-logo-section.sticky-menu ul.dropdown li a {
     background-size: cover;
     background-attachment: fixed;
     text-align: center;
+    background-image: url('img/welcome-bg-2.jpg');
     z-index: 2;
     height: 100vh;
     width: 100%;
@@ -3214,3 +3215,8 @@ uncomment this part if you haven't added this code anywhere else
     margin-top: 10px;
     width: 40px;
 }
+
+
+/* .owl-dots .owl-dot:last-child {
+    display: none;
+} */

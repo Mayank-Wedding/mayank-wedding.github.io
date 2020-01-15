@@ -13,10 +13,13 @@
     let bridemaidNames = ['Prakruti', 'Chintu'];
     let bridemaidRelations = ['Sister', 'Sister'];
     html = $('#bridemaid-stage').html();
+    html = html.trim();
+    html = html.replace(/>\s+</g, '><');
     for (var i = 0; i < bridemaidImages.length; i++) {
         $('#bridemaid-stage').append(html.replace(/bridemaid-1.jpg/g, bridemaidImages[i])
             .replace('Sarang', bridemaidNames[i]).replace('Brother', bridemaidRelations[i]));
     }
+    // $('#bridemaid-stage').append('');
     bridemaidImages = ['prachi.jpg', 'asav-dhrumi-1.jpg'];
     bridemaidNames = ['Prachi', 'Asav & Dhrumi'];
     bridemaidRelations = ['Sister', 'Sisters'];
@@ -25,6 +28,8 @@
         $('#groomsman-stage').append(html.replace(/groomsman-1.jpg/g, bridemaidImages[i])
             .replace('Ronak', bridemaidNames[i]).replace('Brother', bridemaidRelations[i]));
     }
+    // $('#groomsman-stage').append(html);
+    // $('#bridemaid-stage').append('<div class="owl-item cloned"></div>');
     // let galleryImages = ['gallery-2.jpg', 'gallery-3.jpg', 'gallery-4.jpg', 'gallery-5.jpg', 'gallery-6.jpg'];
     // html = $('#gallery-grid').html();
     // for (var i = 0; i < galleryImages.length; i++) {

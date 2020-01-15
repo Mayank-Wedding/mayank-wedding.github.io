@@ -79,7 +79,7 @@
 
             $('.slider').owlCarousel({
                 // rtl:true,
-                rewind: true,
+                loop: true,
                 // margin:10,
                 nav: true,
                 items: 1,
@@ -103,7 +103,7 @@
 
             $('.gift-registy-gallery').owlCarousel({
                 // rtl:true,
-                rewind: true,
+                loop: true,
                 margin: 10,
                 nav: false,
                 dots: true,
@@ -137,7 +137,7 @@
 
             $('.groomsman-slider').owlCarousel({
                 // rtl:true,
-                rewind: true,
+                loop: true,
                 margin: 10,
                 nav: false,
                 dots: true,
@@ -170,7 +170,7 @@
 
             $('.groomsman-slider-2').owlCarousel({
                 // rtl:true,
-                rewind: true,
+                loop: true,
                 margin: 10,
                 nav: false,
                 dots: true,
