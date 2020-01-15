@@ -549,18 +549,6 @@
     .section-heading h2 {
         font-size: 2em;
     }
-    .memoragble-days-img img {
-        -webkit-mask-image: url(img/mask-img.png);
-        mask-image: url(img/mask-img.png);
-        -webkit-mask-repeat: no-repeat;
-        mask-repeat: no-repeat;
-        -webkit-mask-size: 60%;
-        mask-size: 60%;
-        -webkit-mask-position: center center;
-        mask-position: center center;
-        opacity: .9;
-        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
-    }
     .wdding-venu-content h2 {
         font-size: 2em;
     }
@@ -742,5 +730,8 @@
     }
     .memoragble-days-content {
         height: 100px;
+    }
+    .memoragble-days-section.section-padding {
+        display: none;
     }
 }

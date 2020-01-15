@@ -43,10 +43,19 @@
         function theHeartautoHeight() {
             var introduction_image = $('.intruduction-content-img'),
                 introduction_txt = $('.intruduction-content-txt');
-            introduction_txt.css('height', introduction_image.outerHeight());
             var mamorey_image = $('.memoragble-days-img'),
                 memorey_txt = $('.memoragble-days-content');
-            memorey_txt.css('height', mamorey_image.outerHeight());
+            if (window.matchMedia("(max-width: 479px)").matches) {
+                memorey_txt.css('height', 65);
+                introduction_txt.css('height', 165);
+                $('#hk').css('vertical-align', 'bottom');
+                $('#hk').css('height', 230);
+            } else {
+                $('#hk').css('vertical-align', 'middle');
+                memorey_txt.css('height', mamorey_image.outerHeight());
+                introduction_txt.css('height', introduction_image.outerHeight());
+                // $('#hk').css('margin-top', 0);
+            }
             var attending_content = $('.attending-content'),
                 attending_form = $('.attending-form');
             attending_content.css('height', attending_form.outerHeight());
@@ -57,7 +66,6 @@
         5.JARALAX JS
         ------------------------------------------------------------*/
         if ($('.jarallax').length > 0) {
-
             jarallax(document.querySelectorAll('.jarallax'));
             jarallax(document.querySelectorAll('.jarallax-keep-img'), {
                 keepImg: true,
