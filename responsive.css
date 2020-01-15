@@ -734,4 +734,8 @@
     .memoragble-days-section.section-padding {
         display: none;
     }
+    .owl-dots,
+    .owl-dot {
+        margin-top: -80px;
+    }
 }
