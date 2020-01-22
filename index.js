@@ -1,6 +1,6 @@
 (function($) {
     // slides
-    let slideImages = ['img/welcome-bg-3.jpg', 'img/welcome-bg.jpg', 'img/welcome-bg.jpg', 'img/accommodation-bg.jpg', 'img/welcome-bg-2.jpg'];
+    let slideImages = ['img/welcome-bg-3.jpg', 'img/welcome-bg.jpg', 'img/welcome-bg.jpg', 'img/accommodation-bg.jpg', 'img/welcome-bg-2.jpg', 'img/mameru.png'];
     let html = $('#slides').html();
     slideImages.forEach((url) => {
         $('#slides').append(html.replace('img/welcome-bg-2.jpg', url));
@@ -21,8 +21,8 @@
     }
     // $('#bridemaid-stage').append('');
     bridemaidImages = ['prachi.jpg', 'asav-dhrumi-1.jpg'];
-    bridemaidNames = ['Prachi', 'Asav & Dhrumi'];
-    bridemaidRelations = ['Sister', 'Sisters'];
+    bridemaidNames = ['Prachi', 'Asav & Dhrumi', 'kanpur.png'];
+    bridemaidRelations = ['Sister', 'Sisters', 'Brothers'];
     html = $('#groomsman-stage').html();
     for (var i = 0; i < bridemaidImages.length; i++) {
         $('#groomsman-stage').append(html.replace(/groomsman-1.jpg/g, bridemaidImages[i])
