@@ -1547,6 +1547,7 @@ canvas {
 
 .wdding-venu-content {
     background-image: url("img/wedding-palace-inner-bg.jpg");
+    opacity: 80;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
