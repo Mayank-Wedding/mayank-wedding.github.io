@@ -1554,7 +1554,7 @@ canvas {
     padding: 70px 43px;
     position: relative;
     text-align: center;
-    width: calc(100% - 140px);
+    width: calc(100% - 100px);
     z-index: 1;
 }
 
