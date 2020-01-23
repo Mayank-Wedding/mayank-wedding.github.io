@@ -3205,6 +3205,34 @@ uncomment this part if you haven't added this code anywhere else
     width: 26px;
 }
 
+#ft {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    line-height: 1.5;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: -5px -2px 30px blue;
+    z-index: 2000;
+}
+
+h4 {
+    line-height: 1.5;
+}
+
+#chandalo,
+#chandalo1 {
+    float: right;
+    margin: 2px;
+    padding: 10px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: -5px -2px 30px blue;
+}
+
 .gift-registy-gallery.owl-carousel .owl-dot.active {
     background: #96327D none repeat scroll 0 0;
     height: 12px;
@@ -3215,4 +3243,9 @@ uncomment this part if you haven't added this code anywhere else
     float: left;
     margin-top: 10px;
     width: 40px;
+}
+
+.w3-modal {
+    z-index: 2200;
+    line-height: 1.5;
 }
