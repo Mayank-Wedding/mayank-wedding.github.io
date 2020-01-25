@@ -727,6 +727,9 @@
     <!-- .gift-registry-section END -->
 
     <!-- Footer Section -->
+
+    <iframe style="width: 100vw; height: 56.25vw;" src="https://www.youtube.com/embed/UAxWoKgKez0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
     <footer class="footer-section jarallax" id="footer" style="background-image:  url(img/footer-bg.png); z-index: 0;" data-jarallax-original-styles="background-image: url(img/footer-bg.png);">
         <div class="container">
             <div class="tbl">
@@ -791,8 +794,10 @@
         var l = window.location.toString();
         let ind = 0;
         if (l.includes('?')) {
-            ind = l.substr(l.indexOf('?') + 1);
-            if (ind < names.length) {
+            ind = l.substr(l.indexOf('?') + 1).trim();
+            if (isNaN(ind)) {
+                $('#name').html(' ' + ind);
+            } else if (ind < names.length) {
                 $('#name').html(' ' + names[ind - 1]);
             }
         } else {
