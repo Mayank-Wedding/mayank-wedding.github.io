@@ -3207,7 +3207,6 @@ uncomment this part if you haven't added this code anywhere else
 
 #ft {
     position: fixed;
-    display: none;
     bottom: 0;
     left: 0;
     right: 0;
@@ -3225,6 +3224,7 @@ h4 {
 #chandalo,
 #chandalo1 {
     float: right;
+    display: none;
     margin: 2px;
     padding: 10px;
     padding-bottom: 5px;
