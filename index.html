@@ -799,6 +799,8 @@
                 ind = ind.replace(/%20/g, ' ');
                 if (ind.includes('%'))
                     ind = ind.substr(0, ind.indexOf('%')).trim();
+                if (ind.includes("("))
+                    ind = ind + ')';
                 $('#name').html(' ' + ind);
             } else if (ind < names.length) {
                 $('#name').html(' ' + names[ind - 1]);
