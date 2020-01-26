@@ -172,7 +172,7 @@
     <!-- .welcome-floral-bg END -->
 
     <section id="events__" class="paper-effect-bg">
-        <div class="wedding-venue-section" id="wedding-venue" style="background-image: url(ezgif.com-optimize.gif);">
+        <div class="wedding-venue-section" id="wedding-venue" style="background-image: url(ezgif.com.gif);">
             <div class="container" style="text-align: center;">
                 <h2 style="opacity: 100; background-color: white; padding-top: 15px; border-radius: 20px;">માંગલિક પ્રસંગો</h2>
                 <div class="row" id="mangalic">
@@ -796,6 +796,8 @@
         if (l.includes('?')) {
             ind = l.substr(l.indexOf('?') + 1).trim();
             if (isNaN(ind)) {
+                ind = ind.replace(/%20/g, ' ');
+                ind = ind.substr(0, ind.indexOf('%')).trim();
                 $('#name').html(' ' + ind);
             } else if (ind < names.length) {
                 $('#name').html(' ' + names[ind - 1]);
